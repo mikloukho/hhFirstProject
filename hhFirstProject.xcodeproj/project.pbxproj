@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008791AE298424CF0069994D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791AD298424CF0069994D /* DateFormatter.swift */; };
+		008791B129842BAE0069994D /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791B029842BAE0069994D /* Assembly.swift */; };
+		008791B329842C420069994D /* Assembly+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791B229842C420069994D /* Assembly+Formatters.swift */; };
 		ED326CAA2983C40600BC054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CA92983C40600BC054C /* AppDelegate.swift */; };
 		ED326CAC2983C40600BC054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CAB2983C40600BC054C /* SceneDelegate.swift */; };
 		ED326CAE2983C40600BC054C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CAD2983C40600BC054C /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008791AD298424CF0069994D /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		008791B029842BAE0069994D /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		008791B229842C420069994D /* Assembly+Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Formatters.swift"; sourceTree = "<group>"; };
 		ED326CA62983C40600BC054C /* hhFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hhFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED326CA92983C40600BC054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED326CAB2983C40600BC054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008791AC2984249F0069994D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				008791AD298424CF0069994D /* DateFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		008791AF29842B900069994D /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				008791B029842BAE0069994D /* Assembly.swift */,
+				008791B229842C420069994D /* Assembly+Formatters.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 		ED326C9D2983C40600BC054C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +79,8 @@
 		ED326CA82983C40600BC054C /* hhFirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				008791AF29842B900069994D /* Assembly */,
+				008791AC2984249F0069994D /* Utils */,
 				ED326CA92983C40600BC054C /* AppDelegate.swift */,
 				ED326CAB2983C40600BC054C /* SceneDelegate.swift */,
 				ED326CAD2983C40600BC054C /* ViewController.swift */,
@@ -138,6 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008791AE298424CF0069994D /* DateFormatter.swift in Sources */,
+				008791B129842BAE0069994D /* Assembly.swift in Sources */,
+				008791B329842C420069994D /* Assembly+Formatters.swift in Sources */,
 				ED326CAE2983C40600BC054C /* ViewController.swift in Sources */,
 				ED326CAA2983C40600BC054C /* AppDelegate.swift in Sources */,
 				ED326CAC2983C40600BC054C /* SceneDelegate.swift in Sources */,
