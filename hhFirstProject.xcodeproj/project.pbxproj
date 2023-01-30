@@ -10,6 +10,7 @@
 		008791AE298424CF0069994D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791AD298424CF0069994D /* DateFormatter.swift */; };
 		008791B129842BAE0069994D /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791B029842BAE0069994D /* Assembly.swift */; };
 		008791B329842C420069994D /* Assembly+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791B229842C420069994D /* Assembly+Formatters.swift */; };
+		ED29638829877751009ADC2D /* FirstProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED29638629877750009ADC2D /* FirstProject.xcdatamodeld */; };
 		ED326CAA2983C40600BC054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CA92983C40600BC054C /* AppDelegate.swift */; };
 		ED326CAC2983C40600BC054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CAB2983C40600BC054C /* SceneDelegate.swift */; };
 		ED326CAE2983C40600BC054C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CAD2983C40600BC054C /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		008791AD298424CF0069994D /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		008791B029842BAE0069994D /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		008791B229842C420069994D /* Assembly+Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Formatters.swift"; sourceTree = "<group>"; };
+		ED29638729877751009ADC2D /* FirstProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstProject.xcdatamodel; sourceTree = "<group>"; };
 		ED326CA62983C40600BC054C /* hhFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hhFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED326CA92983C40600BC054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED326CAB2983C40600BC054C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				ED326CB22983C40900BC054C /* Assets.xcassets */,
 				ED326CB42983C40900BC054C /* LaunchScreen.storyboard */,
 				ED326CB72983C40900BC054C /* Info.plist */,
+				ED29638629877750009ADC2D /* FirstProject.xcdatamodeld */,
 			);
 			path = hhFirstProject;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				008791AE298424CF0069994D /* DateFormatter.swift in Sources */,
+				ED29638829877751009ADC2D /* FirstProject.xcdatamodeld in Sources */,
 				008791B129842BAE0069994D /* Assembly.swift in Sources */,
 				008791B329842C420069994D /* Assembly+Formatters.swift in Sources */,
 				ED326CAE2983C40600BC054C /* ViewController.swift in Sources */,
@@ -390,6 +394,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ED29638629877750009ADC2D /* FirstProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED29638729877751009ADC2D /* FirstProject.xcdatamodel */,
+			);
+			currentVersion = ED29638729877751009ADC2D /* FirstProject.xcdatamodel */;
+			path = FirstProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ED326C9E2983C40600BC054C /* Project object */;
 }
