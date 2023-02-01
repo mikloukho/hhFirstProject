@@ -17,6 +17,10 @@
 		ED326CB12983C40600BC054C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED326CAF2983C40600BC054C /* Main.storyboard */; };
 		ED326CB32983C40900BC054C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED326CB22983C40900BC054C /* Assets.xcassets */; };
 		ED326CB62983C40900BC054C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED326CB42983C40900BC054C /* LaunchScreen.storyboard */; };
+		ED86C116298ABD0B00F7AFEE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C115298ABD0B00F7AFEE /* Profile.swift */; };
+		ED86C119298AC2EF00F7AFEE /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C118298AC2EF00F7AFEE /* DataStorage.swift */; };
+		ED86C11B298AC36D00F7AFEE /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C11A298AC36D00F7AFEE /* UserDefaultsStorage.swift */; };
+		ED86C11D298AC60500F7AFEE /* Assembly+DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C11C298AC60500F7AFEE /* Assembly+DataStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		ED326CB22983C40900BC054C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED326CB52983C40900BC054C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED326CB72983C40900BC054C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED86C115298ABD0B00F7AFEE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		ED86C118298AC2EF00F7AFEE /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		ED86C11A298AC36D00F7AFEE /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		ED86C11C298AC60500F7AFEE /* Assembly+DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+DataStorage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			children = (
 				008791B029842BAE0069994D /* Assembly.swift */,
 				008791B229842C420069994D /* Assembly+Formatters.swift */,
+				ED86C11C298AC60500F7AFEE /* Assembly+DataStorage.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -81,6 +90,8 @@
 		ED326CA82983C40600BC054C /* hhFirstProject */ = {
 			isa = PBXGroup;
 			children = (
+				ED86C117298AC2D600F7AFEE /* DataStorage */,
+				ED86C114298ABCE200F7AFEE /* Entities */,
 				008791AF29842B900069994D /* Assembly */,
 				008791AC2984249F0069994D /* Utils */,
 				ED326CA92983C40600BC054C /* AppDelegate.swift */,
@@ -93,6 +104,23 @@
 				ED29638629877750009ADC2D /* FirstProject.xcdatamodeld */,
 			);
 			path = hhFirstProject;
+			sourceTree = "<group>";
+		};
+		ED86C114298ABCE200F7AFEE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ED86C115298ABD0B00F7AFEE /* Profile.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ED86C117298AC2D600F7AFEE /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				ED86C118298AC2EF00F7AFEE /* DataStorage.swift */,
+				ED86C11A298AC36D00F7AFEE /* UserDefaultsStorage.swift */,
+			);
+			path = DataStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED86C11B298AC36D00F7AFEE /* UserDefaultsStorage.swift in Sources */,
 				008791AE298424CF0069994D /* DateFormatter.swift in Sources */,
+				ED86C116298ABD0B00F7AFEE /* Profile.swift in Sources */,
 				ED29638829877751009ADC2D /* FirstProject.xcdatamodeld in Sources */,
+				ED86C11D298AC60500F7AFEE /* Assembly+DataStorage.swift in Sources */,
+				ED86C119298AC2EF00F7AFEE /* DataStorage.swift in Sources */,
 				008791B129842BAE0069994D /* Assembly.swift in Sources */,
 				008791B329842C420069994D /* Assembly+Formatters.swift in Sources */,
 				ED326CAE2983C40600BC054C /* ViewController.swift in Sources */,
