@@ -13,3 +13,9 @@ struct Profile: Codable {
     let id: ID
     let name: String
 }
+
+extension Profile: CustomDebugStringConvertible {
+    var debugDescription: String {
+            return "id: \(id), name: \(name)"
+        }
+}

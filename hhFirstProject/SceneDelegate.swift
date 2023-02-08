@@ -10,10 +10,6 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    var timeTracker: Date?
-    private let assembly = Assembly()
-    lazy var dateFormatter: DateFormatterProtocol = assembly.dateFormatter(format: .HHmmss)
-    lazy var dataStorage = assembly.dataStorage
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -30,43 +26,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        let defaults = UserDefaults.standard
-        let now = Date()
-        let encoder = JSONEncoder()
-        let decoder = JSONDecoder()
-        defer {
-            defaults.synchronize()
-        }
-        guard let encodedProfile = defaults.data(forKey: "profile"),
-              let profile = try? decoder.decode(Profile.self, from: encodedProfile)
-        else {
-            let profile = Profile(id: "21", name: "test")
-            let encodedProfile = try? encoder.encode(profile)
-            defaults.set(encodedProfile, forKey: "profile")
-            return
-        }
-        print(profile)
-        
-        
-        
-        if let lastRunDate = defaults.string(forKey: "lastRunDate"){
-            guard let double = Double(lastRunDate) else { return }
-            let interval = now.timeIntervalSince(Date(timeIntervalSince1970: TimeInterval(double)))
-            print(String(format: "Time elapsed since the last run: %.3f second", interval))
-        }
-        
-        defaults.set(now.timeIntervalSince1970, forKey: "lastRunDate")
-        
-        timeTracker = now
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        if let timeInterval = timeTracker?.timeIntervalSince(Date()) {
-            print(dateFormatter.string(from: timeTracker!))
-            print(String(format: "Active time: %.3f second", timeInterval))
-        }
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
     }

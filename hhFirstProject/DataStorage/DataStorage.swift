@@ -7,8 +7,7 @@
 
 import Foundation
 
-protocol DataStorage: RawRepresentable {
-    associatedtype Value
-    func save(value: Value, key: String)
-    func value(key: String) -> Value?
+protocol DataStorage {
+    func save<Value: Codable, Key: RawRepresentable>(value: Value, key: Key) where Key.RawValue == String
+    func value<Value: Codable, Key: RawRepresentable>(key: Key) -> Value? where Key.RawValue == String
 }

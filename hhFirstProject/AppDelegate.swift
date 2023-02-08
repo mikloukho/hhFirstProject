@@ -10,8 +10,16 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    private let assembly = Assembly()
+    lazy var dataStorage = assembly.dataStorage
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        guard let profile: Profile = dataStorage.value(key: UserDefaultsStorageKey.profile) else {
+            print("first launch")
+            let defaultProfile = Profile(id: "1", name: "profileName")
+            dataStorage.save(value: defaultProfile, key: UserDefaultsStorageKey.profile)
+            return true
+        }
+        print(profile)
         return true
     }
 

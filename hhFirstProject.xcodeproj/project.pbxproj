@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		008791AE298424CF0069994D /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791AD298424CF0069994D /* DateFormatter.swift */; };
 		008791B129842BAE0069994D /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791B029842BAE0069994D /* Assembly.swift */; };
-		008791B329842C420069994D /* Assembly+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008791B229842C420069994D /* Assembly+Formatters.swift */; };
 		ED29638829877751009ADC2D /* FirstProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED29638629877750009ADC2D /* FirstProject.xcdatamodeld */; };
 		ED326CAA2983C40600BC054C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CA92983C40600BC054C /* AppDelegate.swift */; };
 		ED326CAC2983C40600BC054C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED326CAB2983C40600BC054C /* SceneDelegate.swift */; };
@@ -20,13 +19,12 @@
 		ED86C116298ABD0B00F7AFEE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C115298ABD0B00F7AFEE /* Profile.swift */; };
 		ED86C119298AC2EF00F7AFEE /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C118298AC2EF00F7AFEE /* DataStorage.swift */; };
 		ED86C11B298AC36D00F7AFEE /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C11A298AC36D00F7AFEE /* UserDefaultsStorage.swift */; };
-		ED86C11D298AC60500F7AFEE /* Assembly+DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED86C11C298AC60500F7AFEE /* Assembly+DataStorage.swift */; };
+		ED9FC3EE2993918C006261D2 /* UserDefaultsStorageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9FC3ED2993918B006261D2 /* UserDefaultsStorageKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008791AD298424CF0069994D /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		008791B029842BAE0069994D /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
-		008791B229842C420069994D /* Assembly+Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+Formatters.swift"; sourceTree = "<group>"; };
 		ED29638729877751009ADC2D /* FirstProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FirstProject.xcdatamodel; sourceTree = "<group>"; };
 		ED326CA62983C40600BC054C /* hhFirstProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hhFirstProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED326CA92983C40600BC054C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +37,7 @@
 		ED86C115298ABD0B00F7AFEE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		ED86C118298AC2EF00F7AFEE /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		ED86C11A298AC36D00F7AFEE /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
-		ED86C11C298AC60500F7AFEE /* Assembly+DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assembly+DataStorage.swift"; sourceTree = "<group>"; };
+		ED9FC3ED2993918B006261D2 /* UserDefaultsStorageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				008791B029842BAE0069994D /* Assembly.swift */,
-				008791B229842C420069994D /* Assembly+Formatters.swift */,
-				ED86C11C298AC60500F7AFEE /* Assembly+DataStorage.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -119,6 +115,7 @@
 			children = (
 				ED86C118298AC2EF00F7AFEE /* DataStorage.swift */,
 				ED86C11A298AC36D00F7AFEE /* UserDefaultsStorage.swift */,
+				ED9FC3ED2993918B006261D2 /* UserDefaultsStorageKey.swift */,
 			);
 			path = DataStorage;
 			sourceTree = "<group>";
@@ -198,10 +195,9 @@
 				008791AE298424CF0069994D /* DateFormatter.swift in Sources */,
 				ED86C116298ABD0B00F7AFEE /* Profile.swift in Sources */,
 				ED29638829877751009ADC2D /* FirstProject.xcdatamodeld in Sources */,
-				ED86C11D298AC60500F7AFEE /* Assembly+DataStorage.swift in Sources */,
+				ED9FC3EE2993918C006261D2 /* UserDefaultsStorageKey.swift in Sources */,
 				ED86C119298AC2EF00F7AFEE /* DataStorage.swift in Sources */,
 				008791B129842BAE0069994D /* Assembly.swift in Sources */,
-				008791B329842C420069994D /* Assembly+Formatters.swift in Sources */,
 				ED326CAE2983C40600BC054C /* ViewController.swift in Sources */,
 				ED326CAA2983C40600BC054C /* AppDelegate.swift in Sources */,
 				ED326CAC2983C40600BC054C /* SceneDelegate.swift in Sources */,

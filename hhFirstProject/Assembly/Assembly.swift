@@ -8,14 +8,13 @@
 import Foundation
 
 final class Assembly {
-    enum DateFormat: String {
-        case yyMMdd = "yy MM dd"
-        case HHmmss = "HH mm ss"
+    private var encoder: JSONEncoder {
+        JSONEncoder()
     }
-    
-    func dateFormatter(format: DateFormat) -> DateFormatterProtocol {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format.rawValue
-        return dateFormatter
+    private var decoder: JSONDecoder {
+        JSONDecoder()
+    }
+    var dataStorage: any DataStorage {
+        UserDefaultsStorage(encoder: encoder, decoder: decoder, userDefaults: .standard)
     }
 }
